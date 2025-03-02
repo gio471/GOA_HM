@@ -37,12 +37,10 @@ console.log(10 < 5);
 // confirm სთავაზობს მომხმარებელს ორ შესაძლებლობას: "OK" ან "Cancel". ეს ფუნქცია აბრუნებს true თუ მომხმარებელმა დააჭირა "OK", და false თუ "Cancel".
 // prompt ნაჩვენებია როგორც ტექსტური ველი, სადაც მომხმარებელი უნდა შეიყვანოს გარკვეული მნიშვნელობა. ის აბრუნებს შეყვანილ მნიშვნელობას ან null, თუ მომხმარებელმა დააჭირა "Cancel".
 
+const response = confirm("are you adult?: ");
 
-function checkAdult() {
-    let isAdult = confirm("Are you an adult?");
-    if (isAdult) {
-        alert("You are adult");
-    } else {
-        alert("You are kid");
-    }
+if (response){
+    console.log("you are adult.");
+} else{
+    console.log("you aren't adult.")
 }
